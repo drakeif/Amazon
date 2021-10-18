@@ -1,0 +1,42 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+    place-content: center;
+    background: whitesmoke;
+    width: 100%;
+    height: 100%;
+    animation: menu-down .7s ease-out;
+    &__menu {
+        height: 100%;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3rem;
+    }
+    &__link {
+        color: $darkBlue;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    &.active {
+        display: grid;
+    }
+}
+@keyframes menu-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

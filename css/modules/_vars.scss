@@ -1,0 +1,17 @@
+// COLOR
+$darkBlue: #232F3E;
+$wh: #ffffff;
+$lightGray: #F2F2F2;
+$dark: #232F3E;
+// TRANSITION
+$tr: .2s linear;
+// RESET INPUT
+@mixin resetInput {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: $dark;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+}

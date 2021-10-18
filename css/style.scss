@@ -1,0 +1,34 @@
+@import 'modules/fonts';
+@import 'modules/vars';
+@import 'modules/btn';
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+img {
+    display: inline-block;
+    min-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container {
+    position: relative;
+    max-width: 117rem;
+    min-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@import 'modules/header';
+@import 'modules/modal';
