@@ -5,51 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Webpage</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <!-- CONTAINER -->
-    <div class="container">
-        <!-- TOGGLE BTN -->
-       <button class="btn btn--menu" id="menuBtn">
-           <span></span>
-           <span></span>
-           <span></span>
-       </button>
-       <!-- HEADER -->
-       <header class="header">
-           <div class="header__inner">
-               <div class="header__logo">
-                   <img src="./img/logo.png" alt="logo">
-               </div>
-               <div class="header__search">
-                   <select>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <!-- TOGGLE BTN -->
+                <button class="btn btn--menu" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div class="header__search">
+                    <select>
                         <option selected>All</option>
                         <option>Mobile</option>
                         <option>Watch</option>
                         <option>PC</option>
-                   </select>
-                   <div class="header__search_line"></div>
-                   <input type="text" placeholder="Search Mobiles, TV, Laptops,Tablets, Beauty & Personal Care etc.">
-               </div>
-               <div class="header__location">
-                   <div class="header__location_like">
-                        <img src="./icon/heart.svg" alt="heart">
-                   </div>
-                   <div class="header__location_bag">
-                        <img src="./icon/bag.svg" alt="bag">
-                   </div>
-                   <div class="header__location_div"></div>
-                   <div class="header__location_city">
-                       <img src="./icon/location.svg" alt="location">
-                       <p>Lviv</p>
-                   </div>
-                   <button class="btn btn--login">Login</button>
-               </div>
-           </div>
-       </header>
-    </div>
-   <!-- MODAL -->
+                    </select>
+                    <div class="header__search_line"></div>
+                    <input type="text" placeholder="Search Mobiles, TV, Laptops,Tablets, Beauty & Personal Care etc.">
+                </div>
+                <div class="header__location">
+                    <div class="header__location_like">
+                            <img src="./icon/heart.svg" alt="heart">
+                    </div>
+                    <div class="header__location_bag">
+                            <img src="./icon/bag.svg" alt="bag">
+                    </div>
+                    <div class="header__location_div"></div>
+                    <div class="header__location_city">
+                        <img src="./icon/location.svg" alt="location">
+                        <p>Lviv</p>
+                    </div>
+                    <button class="btn btn--login">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MODAL -->
     <div class="modal" id="modal">
         <div class="modal__menu">
             <nav class="modal__nav">

@@ -1,20 +1,39 @@
 .header {
     padding: 4rem 0;
+    @include point(768) {
+        padding: 2rem 0;
+    }
+    @include point(500) {
+        padding: 1rem 0;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include point(1080) {
+            column-gap: 1rem;
+        }
     }
     &__logo {
         width: 10.7rem;
         height: 3.2rem;
+        @include point(930) {
+            margin-right: auto;
+        }
+        @include point(500) {
+            width: 8rem;
+            height: auto;
+        }
     }
     &__search {
         display: flex;
         column-gap: 1rem;
         padding: 1rem;
         width: 60rem;
-        background: $lightGray url('../../icon/search.svg') 95% no-repeat;
+        background: $lightGray url('../icon/search.svg') 95% no-repeat;
+        @include point(930) {
+            display: none;
+        }
         select {
             @include resetInput;
         }
@@ -37,29 +56,48 @@
         display: flex;
         align-items: center;
         column-gap: 2rem;
+        @include point(1080) {
+            column-gap: 1rem;
+        }
         &_like {
             width: 2rem;
             height: 2rem;
             cursor: pointer;
+            @include point(1080) {
+                display: none;
+            }
         }
         &_bag {
             width: 2.4rem;
             height: 2.4rem;
             cursor: pointer;
+            @include point(1080) {
+                display: none;
+            }
         }
         &_div {
             width: 0.1rem;
             height: 2.4rem;
             background: rgba($dark, .3);
+            @include point(1080) {
+                display: none;
+            }
         }
         &_city {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             column-gap: 1rem;
+            cursor: pointer;
             img {
                 min-width: 2rem;
                 min-height: 2rem;
+                transition: $tr;
+            }
+            &:hover {
+                img {
+                    transform: translateY(-5px);
+                }
             }
         }
     }

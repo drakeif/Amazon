@@ -18,12 +18,11 @@ body {
 }
 img {
     display: inline-block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
 .container {
-    position: relative;
     max-width: 117rem;
     min-width: 32rem;
     margin: 0 auto;

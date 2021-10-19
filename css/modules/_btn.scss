@@ -14,8 +14,19 @@
         height: 10.8rem;
         position: absolute;
         top: 0;
-        left: -13.2rem;
+        left: 0;
         z-index: 10;
+        overflow: hidden;
+        @include point(1400) {
+            position: relative;
+            max-width: 6rem;
+            min-width: 6rem;
+            height: 4rem;
+        }
+        @include point(500) {
+            max-width: 5rem;
+            min-width: 4rem;
+        }
         span {
             display: block;
             background: $wh;
@@ -25,28 +36,64 @@
             left: 4rem;
             pointer-events: none;
             transition: $tr;
+            @include point(1400) {
+                left: 1rem;
+            }
+            @include point(500) {
+                left: .5rem;
+            }
             &:nth-child(1) {
                 width: 4rem;
                 top: 40%;
+                @include point(1400) {
+                    width: 3rem;
+                    top: 35%;
+                }
+                @include point(500) {
+                    width: 2rem;  
+                }
             }
             &:nth-child(2) {
                 top: 50%;
+                @include point(1400) {
+                    width: 4rem;  
+                }
+                @include point(500) {
+                    width: 3rem;  
+                }
             }
             &:nth-child(3) {
                 top: 60%;
                 width: 3rem;
+                @include point(1400) {
+                    width: 2rem;
+                    top: 65%; 
+                }
+                @include point(500) {
+                    width: 1.5rem;
+                    top: 65%; 
+                }
             }
         }
         &:hover {
             span {
                 &:nth-child(1) {
                     width: 6rem;
+                    @include point(1400) {
+                        width: 4rem;   
+                    }
                 }
                 &:nth-child(2) {
                    width: 2rem;
+                   @include point(1400) {
+                    width: 2rem;   
+                }
                 }
                 &:nth-child(3) {
-                    width: 4rem; 
+                    width: 4rem;
+                    @include point(1400) {
+                        width: 3rem;   
+                    }
                 } 
             }
         }
@@ -56,6 +103,9 @@
                     width: 5rem;
                     top: 50%;
                     transform: rotate(45deg);
+                    @include point(1400) {
+                        width: 3rem;   
+                    }
                 }
                 &:nth-child(2) {
                    width: 0;
@@ -64,6 +114,9 @@
                     width: 5rem;
                     top: 50%;
                     transform: rotate(-45deg);
+                    @include point(1400) {
+                        width: 3rem;   
+                    }
                 } 
             }
         }
@@ -72,5 +125,14 @@
         padding: 1rem 3rem;
         background: $darkBlue;
         color: $wh;
+        border: .1rem solid $darkBlue;
+        transition: $tr;
+        @include point(500) {
+            padding: .5rem 2rem;
+        }
+        &:hover {
+            background: $wh;
+            color: $darkBlue;
+        }
     }
 }
