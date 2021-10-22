@@ -1,3 +1,4 @@
+// TOGGLE MENU
 const menuBtn = document.getElementById('menuBtn'),
       modal = document.getElementById('modal'),
       closeMenu = document.querySelectorAll('.modal__nav');
@@ -11,3 +12,10 @@ closeMenu.forEach(el => el.addEventListener('click', (e)=> {
     menuBtn.classList.remove('active');
     modal.classList.remove('active');
   }));
+// SWIPER
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+  });

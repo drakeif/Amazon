@@ -7,6 +7,8 @@
     <title>Amazon Webpage</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <!-- HEADER -->
@@ -44,11 +46,101 @@
                         <img src="./icon/location.svg" alt="location">
                         <p>Lviv</p>
                     </div>
-                    <button class="btn btn--login">Login</button>
+                    <button class="btn btn--fill">Login</button>
                 </div>
             </div>
         </div>
     </header>
+    <!-- GOODS -->
+    <section class="goods">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="goods__inner">
+                        <div class="goods__offer">
+                            <h2>sony wh-h910n</h2>
+                            <h1>Best in Hi-Res and Noise Cancelling</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.</p>
+                            <div class="goods__btn">
+                                <button class="btn btn--fill blue">buy now for $129</button>
+                                <button class="btn btn--border">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="goods__img">
+                            <img src="./img/goods/headphone.png" alt="headphone">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="goods__inner">
+                        <div class="goods__offer">
+                            <h2>JBL Tune 700 BT Black</h2>
+                            <h1>Best in Hi-Res and Noise Cancelling</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.</p>
+                            <div class="goods__btn">
+                                <button class="btn btn--fill blue">buy now for $59</button>
+                                <button class="btn btn--border">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="goods__img">
+                            <img src="./img/goods/jbl.png" alt="headphone">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="goods__inner">
+                        <div class="goods__offer">
+                            <h2>QCY T11 Dual-Armature TWS</h2>
+                            <h1>Best in Hi-Res and Noise Cancelling</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.</p>
+                            <div class="goods__btn">
+                                <button class="btn btn--fill blue">buy now for $39</button>
+                                <button class="btn btn--border">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="goods__img">
+                            <img src="./img/goods/qcy.png" alt="headphone">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="goods__inner">
+                        <div class="goods__offer">
+                            <h2>Sennheiser HD 350 BT Over-Ear</h2>
+                            <h1>Best in Hi-Res and Noise Cancelling</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.</p>
+                            <div class="goods__btn">
+                                <button class="btn btn--fill blue">buy now for $109</button>
+                                <button class="btn btn--border">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="goods__img">
+                            <img src="./img/goods/hd350.png" alt="headphone">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="goods__inner">
+                        <div class="goods__offer">
+                            <h2>Tws AirPods Pro для Iphone, Android</h2>
+                            <h1>Best in Hi-Res and Noise Cancelling</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, est enim mauris dolor ultrices mi ipsum risus. Adipiscing consequat, bibendum fringilla dolor ornare. Turpis sit egestas condimentum tincidunt lobortis donec massa ultricies. Urna, cursus eleifend neque ut nibh est.</p>
+                            <div class="goods__btn">
+                                <button class="btn btn--fill blue">buy now for $49</button>
+                                <button class="btn btn--border">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="goods__img">
+                            <img src="./img/goods/airpods.png" alt="headphone">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
     <!-- MODAL -->
     <div class="modal" id="modal">
         <div class="modal__menu">
@@ -62,6 +154,7 @@
         </div>
     </div>
     <!-- SCRIPT -->
-    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script> 
 </body>
 </html>

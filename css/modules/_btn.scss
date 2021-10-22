@@ -121,7 +121,7 @@
             }
         }
     }
-    &--login {
+    &--fill {
         padding: 1rem 3rem;
         background: $darkBlue;
         color: $wh;
@@ -133,6 +133,37 @@
         &:hover {
             background: $wh;
             color: $darkBlue;
+        }
+        &.blue {
+            background: $blue;
+            border: .1rem solid $blue;
+            font-weight: 700;
+            @include point(768) {
+                font-size: 1.2rem;
+            }
+            &:hover {
+                background: $wh;
+                color: $blue;
+            }
+        }
+    }
+    &--border {
+        padding: 1rem 3rem;
+        background: transparent;
+        color: $darkBlue;
+        font-weight: 700;
+        border: .1rem solid $darkBlue;
+        transition: $tr;
+        @include point(768) {
+            font-size: 1.2rem;
+        }
+        @include point(500) {
+            padding: .5rem 2rem;
+        }
+        &:hover {
+            background: $accent;
+            border: .1rem solid $accent;
+            color: $wh;
         }
     }
 }
