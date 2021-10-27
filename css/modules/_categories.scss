@@ -1,0 +1,47 @@
+.categories {
+    padding: 5rem 0 7rem;
+    @include point(768) {
+        padding: 3rem 0 5rem;
+    }
+    @include point(500) {
+        padding: 2rem 0 4rem;
+    }
+    &__title {
+        @include h2Title;
+        margin-bottom: 3rem;
+        @include point(500) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__item {
+        width: 10rem;
+        height: 18.4rem;
+        background: $lightGray;
+        display: grid;
+        place-content: center;
+        transition: $tr;
+        figure {
+            text-align: center;
+            img {
+                margin-bottom: 1.5rem;
+            }
+            figcaption {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+        &:hover {
+            background: transparent;
+            box-shadow: 0 10px 15px rgba($darkBlue, .2);
+        }
+    }
+}
+.swiper-slide-2 {
+    display: flex;
+    justify-content: center;
+}
+.mySwiperCategories {
+    padding: 0 0 1.5rem !important;
+}
+
