@@ -32,3 +32,14 @@ $tr: .2s linear;
         font-size: 1.8rem;           
     }
 }
+// HREF
+@mixin href {
+    color: $blue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

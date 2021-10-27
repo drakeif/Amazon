@@ -191,7 +191,8 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #000000; }
 
 img {
   display: inline-block;
@@ -460,16 +461,34 @@ p {
     .categories {
       padding: 2rem 0 4rem; } }
   .categories__title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.4rem;
-    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 500px) {
-      .categories__title {
-        font-size: 1.8rem; } }
+    .categories__title h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 600; }
+      @media only screen and (max-width: 500px) {
+        .categories__title h2 {
+          font-size: 1.8rem; } }
     @media only screen and (max-width: 500px) {
       .categories__title {
         margin-bottom: 1.5rem; } }
+    .categories__title a {
+      color: #146EB4;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-decoration: none; }
+      .categories__title a:hover {
+        text-decoration: underline; }
   .categories__item {
     width: 10rem;
     height: 18.4rem;
@@ -485,7 +504,8 @@ p {
       .categories__item figure figcaption {
         font-family: 'Roboto', sans-serif;
         font-size: 1.3rem;
-        font-weight: 300; }
+        font-weight: 300;
+        color: #232F3E; }
     .categories__item:hover {
       background: transparent;
       -webkit-box-shadow: 0 10px 15px rgba(35, 47, 62, 0.2);
