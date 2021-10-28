@@ -28,6 +28,7 @@
         display: grid;
         place-content: center;
         transition: $tr;
+        cursor: pointer;
         figure {
             text-align: center;
             img {
@@ -42,7 +43,7 @@
         }
         &:hover {
             background: transparent;
-            box-shadow: 0 10px 15px rgba($darkBlue, .2);
+            box-shadow: 0 7px 10px rgba($darkBlue, .2);
         }
     }
 }
